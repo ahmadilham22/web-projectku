@@ -7,6 +7,8 @@ use App\Http\Controllers\PendudukController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardDataController;
+use App\Http\Controllers\DataCoronaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +51,5 @@ Route::post('/dashboard/store', [PendudukController::class, 'store']);
 Route::get('/dashboard/{id}/edit', [PendudukController::class, 'edit']);
 Route::put('/dashboard/update', [PendudukController::class, 'update']);
 Route::get('/dashboard/{id}/delete', [PendudukController::class, 'destroy']);
+
+Route::get('dashboard/corona', [DataCoronaController::class, 'index']);

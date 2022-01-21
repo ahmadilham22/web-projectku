@@ -13,6 +13,12 @@
                Population Data
             </a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link {{ Request::is('dashboard/penduduk')? 'active' : '' }}"  href="/dashboard/corona/">
+              <span data-feather="user"></span>
+              Data Corona 
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link  {{ Request::is('dashboard/data')? 'active' : '' }}"  href="/dashboard/data">
               <span data-feather="users"></span>
